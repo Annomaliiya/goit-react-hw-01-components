@@ -1,0 +1,25 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.avatar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+}
+.name {
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.location {
+  margin-top: 10px;
+  color: brown;
+  font-weight: bold;
+}

@@ -1,0 +1,28 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  cursor: pointer;
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.15);
+}
+.avatar {
+  margin-right: 15px;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.isOnline {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #185918;
+  margin-right: 10px;
+}
+.isOffline {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #a02525;
+  margin-right: 10px;
+}

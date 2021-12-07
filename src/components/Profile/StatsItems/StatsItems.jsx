@@ -2,8 +2,7 @@ import PropTypes from "prop-types";
 
 import "./StatsItems.css";
 
-const StatsItems = ({ item }) => {
-  const { followers, views, likes } = item;
+const StatsItems = ({ followers, views, likes }) => {
     return (
         <ul className="stats">
     <li>
