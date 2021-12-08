@@ -1,21 +1,21 @@
 import PropTypes from "prop-types";
 
-import "./StatsItems.css";
+import styles from "./StatsItems.module.css";
 
 const StatsItems = ({ followers, views, likes }) => {
     return (
-        <ul className="stats">
+        <ul className={styles.stats}>
     <li>
       <span className="label">Followers</span>
-                <span className="quantity">{followers}</span>
+                <span className={styles.quantity}>{followers}</span>
     </li>
     <li>
       <span className="label">Views</span>
-                <span className="quantity">{views}</span>
+          <span className={styles.quantity}>{views}</span>
     </li>
     <li>
       <span className="label">Likes</span>
-                <span className="quantity">{likes}</span>
+          <span className={styles.quantity}>{likes}</span>
     </li>
   </ul>
     )

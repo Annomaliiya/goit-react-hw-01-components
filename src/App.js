@@ -3,17 +3,21 @@ import Statistics from './components/Statistics';
 import FriendList from './components/FriendList';
 import TransactionHistory from './components/TransactionHistory';
 
-import './App.css';
+import styles from './App.module.css';
 
 import data from "./data";
 
 function App() {
   return (
-    <div className="container">
-      <Profile data={data.user} />
+    <div className={styles.container}>
+      <Profile username={data.user.username}
+        tag={data.user.tag}
+        location={data.user.location}
+        avatar={data.user.avatar}
+        stats={data.user.stats} />
       <Statistics title="Upload stats" stats={data.statistics} />;
       <FriendList friends={data.friends} />
-      <TransactionHistory props={data.transactions} />;
+      <TransactionHistory items={data.transactions} />;
     </div>
   );
 }
